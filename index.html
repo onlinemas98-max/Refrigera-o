@@ -30,6 +30,9 @@
         #mobile-menu {
             display: none;
         }
+        .aspect-3-4 {
+            aspect-ratio: 3 / 4;
+        }
     </style>
 </head>
 <body class="bg-white text-slate-800">
@@ -49,9 +52,11 @@
                     <a href="#vantagens" class="hover:text-blue-500 transition-colors">Vantagens</a>
                     <a href="#contato" class="hover:text-blue-500 transition-colors">Contato</a>
                 </div>
-                <a href="https://wa.me/5521990449661" class="bg-[#25D366] text-white px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-[#1ebe57] transition-colors">
-                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
-                </a>
+                <div class="flex items-center gap-4">
+                    <a href="https://wa.me/5511999990000" class="bg-[#25D366] text-white px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-[#1ebe57] transition-colors shadow-md">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> (11) 99999-0000
+                    </a>
+                </div>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -65,7 +70,11 @@
             <a href="#servicos" class="mobile-link">Serviços</a>
             <a href="#vantagens" class="mobile-link">Vantagens</a>
             <a href="#contato" class="mobile-link">Contato</a>
-            <a href="https://wa.me/5521990449661" class="text-green-600 font-black">WhatsApp</a>
+            <div class="pt-4 border-t border-slate-100">
+                <a href="https://wa.me/5511999990000" class="text-green-600 font-black flex items-center gap-2">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp: (11) 99999-0000
+                </a>
+            </div>
         </div>
     </header>
 
@@ -73,7 +82,7 @@
     <section class="py-12 md:py-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 text-center md:text-left">
-                <p class="text-blue-500 font-bold text-sm uppercase tracking-widest mb-4">Atendimento em Niterói, São Gonçalo e Itaboraí</p>
+                <p class="text-blue-500 font-bold text-xs uppercase tracking-wider mb-4">Atendimento em Niterói, São Gonçalo e Itaboraí</p>
                 <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                     Olá! Somos da <span class="text-blue-500">Técnico Refrigeração</span>, especialistas em refrigeração.
                 </h1>
@@ -87,10 +96,10 @@
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="https://wa.me/5521990449661" class="bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold py-3 px-8 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg text-lg">
-                        <i data-lucide="message-circle" class="w-5 h-5"></i> Chamar no WhatsApp
+                    <a href="https://wa.me/5511999990000" class="bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg text-base">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp: (11) 99999-0000
                     </a>
-                    <a href="#servicos" class="bg-white border-2 border-slate-200 hover:border-blue-500 text-slate-700 font-bold py-3 px-8 rounded-lg flex items-center justify-center transition-all text-lg">
+                    <a href="#servicos" class="bg-white border-2 border-slate-200 hover:border-blue-500 text-slate-700 font-bold py-3 px-6 rounded-lg flex items-center justify-center transition-all text-base">
                         Ver Serviços
                     </a>
                 </div>
@@ -98,17 +107,17 @@
             
             <div class="flex-1 relative">
                 <div class="bg-blue-50 rounded-3xl p-4 md:p-8 relative">
-                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
-                        <div class="aspect-[3/4] bg-slate-200 relative overflow-hidden">
-                            <img src="https://i.postimg.cc/bwydN4ZF/1.jpg" alt="Técnico Profissional" class="w-full h-full object-cover">
-                            <div class="absolute top-4 left-4 bg-blue-500 text-white text-[10px] font-bold px-2 py-1 rounded flex items-center gap-1 shadow-lg">
-                                <i data-lucide="shield-check" class="w-3 h-3"></i> Garantia de Até 1 Ano
+                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100 relative">
+                        <div class="aspect-3-4 bg-slate-200 relative overflow-hidden">
+                            <img src="https://i.postimg.cc/bwydN4ZF/1.jpg" alt="Técnico Profissional" class="w-full h-full object-cover" referrerpolicy="no-referrer">
+                            <div class="absolute top-4 left-4 bg-blue-500 text-white text-xs font-bold px-3 py-1.5 rounded-md flex items-center gap-2 shadow-lg z-10">
+                                <i data-lucide="shield-check" class="w-4 h-4"></i> Garantia de Até 1 Ano
                             </div>
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6 pt-12">
                                 <div class="text-xl font-black text-white mb-1">Técnico</div>
                                 <p class="text-blue-400 font-bold text-sm mb-3">REFRIGERAÇÃO</p>
                                 <div class="bg-white text-slate-900 py-2 px-4 rounded-lg font-bold text-lg inline-block shadow-lg">
-                                    21 99044-9661
+                                    (11) 99999-0000
                                 </div>
                             </div>
                         </div>
@@ -126,7 +135,7 @@
                 <p class="text-slate-600 text-xl leading-relaxed">Soluções completas para seus equipamentos de refrigeração e lavanderia.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="services-grid">
-                <!-- Cards serão inseridos via JS para facilitar manutenção -->
+                <!-- Cards via JS -->
             </div>
         </div>
     </section>
@@ -136,7 +145,7 @@
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
             <div class="flex-1">
                 <div class="rounded-2xl overflow-hidden shadow-xl aspect-video bg-slate-200">
-                    <img src="https://i.postimg.cc/hvRtFYFH/2.jpg" alt="Nossa Equipe" class="w-full h-full object-cover">
+                    <img src="https://i.postimg.cc/hvRtFYFH/2.jpg" alt="Nossa Equipe" class="w-full h-full object-cover" referrerpolicy="no-referrer">
                 </div>
             </div>
             <div class="flex-1">
@@ -208,10 +217,10 @@
                 </div>
             </div>
             <div class="flex-1 grid grid-cols-2 gap-4">
-                <img src="https://i.postimg.cc/02xych0v/3.jpg" alt="Geladeira" class="aspect-square object-cover rounded-xl shadow-sm">
-                <img src="https://i.postimg.cc/0yX55jR7/4.jpg" alt="Máquina de Lavar" class="aspect-square object-cover rounded-xl shadow-sm">
-                <img src="https://i.postimg.cc/XqW41ydN/5.jpg" alt="Ar Condicionado" class="aspect-square object-cover rounded-xl shadow-sm">
-                <img src="https://i.postimg.cc/HknHNmcs/6.jpg" alt="Reparo" class="aspect-square object-cover rounded-xl shadow-sm">
+                <img src="https://i.postimg.cc/02xych0v/3.jpg" alt="Geladeira" class="aspect-square object-cover rounded-xl shadow-sm" referrerpolicy="no-referrer">
+                <img src="https://i.postimg.cc/0yX55jR7/4.jpg" alt="Máquina de Lavar" class="aspect-square object-cover rounded-xl shadow-sm" referrerpolicy="no-referrer">
+                <img src="https://i.postimg.cc/XqW41ydN/5.jpg" alt="Ar Condicionado" class="aspect-square object-cover rounded-xl shadow-sm" referrerpolicy="no-referrer">
+                <img src="https://i.postimg.cc/HknHNmcs/6.jpg" alt="Reparo" class="aspect-square object-cover rounded-xl shadow-sm" referrerpolicy="no-referrer">
             </div>
         </div>
     </section>
@@ -224,7 +233,7 @@
                 <p class="text-slate-600 text-xl leading-relaxed">Confira alguns de nossos atendimentos recentes em Niterói, São Gonçalo e Itaboraí.</p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="portfolio-grid">
-                <!-- Imagens do portfólio via JS -->
+                <!-- Imagens via JS -->
             </div>
         </div>
     </section>
@@ -237,22 +246,15 @@
                     <h2 class="text-2xl font-bold text-slate-900 mb-10">Fale Conosco</h2>
                     <div class="space-y-8 mb-12">
                         <div class="flex items-center gap-6">
-                            <div class="p-4 bg-blue-50 rounded-full"><i data-lucide="phone" class="text-blue-500 w-8 h-8"></i></div>
-                            <div>
-                                <p class="text-sm text-slate-400 font-bold uppercase tracking-widest">Telefone</p>
-                                <p class="text-xl font-bold text-slate-800">(21) 99044-9661</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-6">
                             <div class="p-4 bg-green-50 rounded-full"><i data-lucide="message-circle" class="text-green-500 w-8 h-8"></i></div>
                             <div>
-                                <p class="text-sm text-slate-400 font-bold uppercase tracking-widest">WhatsApp</p>
-                                <p class="text-xl font-bold text-slate-800">(21) 99044-9661</p>
+                                <p class="text-sm text-slate-400 font-bold uppercase tracking-widest">WhatsApp / Celular</p>
+                                <p class="text-xl font-bold text-slate-800">(11) 99999-0000</p>
                             </div>
                         </div>
                     </div>
-                    <a href="https://wa.me/5521990449661" class="bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold py-3 px-8 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg w-full sm:w-auto text-lg">
-                        Solicitar Orçamento Grátis
+                    <a href="https://wa.me/5511999990000" class="bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold py-3 px-8 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg w-full sm:w-auto text-lg">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> Solicitar Orçamento Grátis
                     </a>
                 </div>
                 <div class="w-full h-[350px] rounded-2xl overflow-hidden shadow-xl border border-slate-100">
@@ -263,10 +265,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white py-12 text-center text-slate-400 border-t border-slate-100">
+    <footer class="bg-white py-8 text-center text-slate-400 border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-6">
-            <p class="text-xl font-bold uppercase tracking-tighter mb-4 text-slate-300">Técnico Refrigeração</p>
-            <p class="text-lg">© 2026 Todos os direitos reservados. Niterói, São Gonçalo e Itaboraí.</p>
+            <p class="text-sm font-semibold uppercase tracking-wider mb-2 text-slate-300">Técnico Refrigeração</p>
+            <p class="text-xs">© 2026 Todos os direitos reservados. Niterói, São Gonçalo e Itaboraí.</p>
         </div>
     </footer>
 
@@ -287,7 +289,7 @@
                 <ul class="space-y-2 mb-6" id="modal-tasks">
                     <!-- Tasks via JS -->
                 </ul>
-                <a href="#" id="modal-whatsapp" target="_blank" class="w-full bg-[#25D366] text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 shadow-md">
+                <a href="https://wa.me/5511999990000" id="modal-whatsapp" target="_blank" class="w-full bg-[#25D366] text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 shadow-md">
                     <i data-lucide="message-circle" class="w-5 h-5"></i> Solicitar agora
                 </a>
             </div>
@@ -295,12 +297,11 @@
     </div>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/5521990449661" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center hover:scale-110 transition-transform">
+    <a href="https://wa.me/5511999990000" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center hover:scale-110 transition-transform">
         <i data-lucide="message-circle" class="w-8 h-8"></i>
     </a>
 
     <script>
-        // Dados dos Serviços
         const services = [
             { 
                 title: "Geladeira", 
@@ -343,7 +344,6 @@
             "https://i.postimg.cc/bwydN4ZF/1.jpg"
         ];
 
-        // Renderizar Grid de Serviços
         const servicesGrid = document.getElementById('services-grid');
         services.forEach((service, index) => {
             const card = document.createElement('div');
@@ -358,7 +358,7 @@
                     <button class="text-blue-500 text-xl font-bold flex items-center gap-2 hover:underline cursor-pointer open-modal-btn" data-index="${index}">
                         Saiba mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
                     </button>
-                    <a href="https://wa.me/5521990449661?text=Olá, gostaria de um orçamento para ${service.title}" target="_blank" class="bg-green-50 text-green-600 px-6 py-3 rounded-full text-lg font-bold flex items-center gap-2 hover:bg-green-100 transition-colors">
+                    <a href="https://wa.me/5511999990000?text=Olá, gostaria de um orçamento para ${service.title}" target="_blank" class="bg-green-50 text-green-600 px-6 py-3 rounded-full text-lg font-bold flex items-center gap-2 hover:bg-green-100 transition-colors">
                         <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp
                     </a>
                 </div>
@@ -366,19 +366,16 @@
             servicesGrid.appendChild(card);
         });
 
-        // Renderizar Portfólio
         const portfolioGrid = document.getElementById('portfolio-grid');
         portfolioImages.forEach((url, i) => {
             const item = document.createElement('div');
             item.className = "aspect-square bg-slate-200 rounded-lg overflow-hidden hover:opacity-80 transition-opacity cursor-pointer shadow-sm";
-            item.innerHTML = `<img src="${url}" alt="Serviço realizado ${i + 1}" class="w-full h-full object-cover">`;
+            item.innerHTML = `<img src="${url}" alt="Serviço realizado ${i + 1}" class="w-full h-full object-cover" referrerpolicy="no-referrer">`;
             portfolioGrid.appendChild(item);
         });
 
-        // Inicializar ícones
         lucide.createIcons();
 
-        // Lógica do Menu Mobile
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
@@ -400,7 +397,6 @@
             });
         });
 
-        // Lógica do Modal
         const modal = document.getElementById('service-modal');
         const modalContent = document.getElementById('modal-content');
         const closeModal = document.getElementById('close-modal');
@@ -410,7 +406,7 @@
             const service = services[index];
             document.getElementById('modal-title').innerText = service.fullTitle;
             document.getElementById('modal-description').innerText = service.description;
-            document.getElementById('modal-whatsapp').href = `https://wa.me/5521990449661?text=Olá, gostaria de solicitar o serviço de ${service.fullTitle}`;
+            document.getElementById('modal-whatsapp').href = `https://wa.me/5511999990000?text=Olá, gostaria de solicitar o serviço de ${service.fullTitle}`;
             
             const tasksList = document.getElementById('modal-tasks');
             tasksList.innerHTML = '';
@@ -438,8 +434,11 @@
             }, 200);
         }
 
-        document.querySelectorAll('.open-modal-btn').forEach(btn => {
-            btn.addEventListener('click', () => openModal(btn.getAttribute('data-index')));
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.open-modal-btn')) {
+                const index = e.target.closest('.open-modal-btn').getAttribute('data-index');
+                openModal(index);
+            }
         });
 
         closeModal.addEventListener('click', hideModal);
