@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnico Refrigeração - Niterói, São Gonçalo e Itaboraí</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .modal-open {
+            overflow: hidden;
+        }
+        #service-modal {
+            display: none;
+        }
+        #mobile-menu {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-100 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-500 rounded flex items-center justify-center text-white font-bold">T</div>
+                <span class="text-xl font-bold text-slate-800">Técnico <span class="text-blue-500 font-normal">Refrigeração</span></span>
+            </div>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center space-x-8">
+                <div class="flex space-x-6 text-xl font-bold text-slate-600">
+                    <a href="#servicos" class="hover:text-blue-500 transition-colors">Serviços</a>
+                    <a href="#vantagens" class="hover:text-blue-500 transition-colors">Vantagens</a>
+                    <a href="#contato" class="hover:text-blue-500 transition-colors">Contato</a>
+                </div>
+                <a href="https://wa.me/5521990449661" class="bg-[#25D366] text-white px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-[#1ebe57] transition-colors">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2" id="menu-toggle">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-slate-100 px-6 py-6 flex flex-col space-y-6 text-xl font-bold">
+            <a href="#servicos" class="mobile-link">Serviços</a>
+            <a href="#vantagens" class="mobile-link">Vantagens</a>
+            <a href="#contato" class="mobile-link">Contato</a>
+            <a href="https://wa.me/5521990449661" class="text-green-600 font-black">WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <p class="text-blue-500 font-bold text-sm uppercase tracking-widest mb-4">Atendimento em Niterói, São Gonçalo e Itaboraí</p>
+                <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight mb-6">
+                    Olá! Somos da <span class="text-blue-500">Técnico Refrigeração</span>, especialistas em refrigeração.
+                </h1>
+                <div class="space-y-4 mb-8">
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-lg mx-auto md:mx-0">
+                        Queremos sempre prestar o melhor serviço e para que isso aconteça, estamos sempre atualizando nossos profissionais.
+                    </p>
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-lg mx-auto md:mx-0">
+                        Em nossa empresa damos ao cliente <span class="font-bold text-slate-900">até 1 ano de garantia</span>.
+                        Chega de sofrimento e demora para conserto de máquina de lavar, geladeira, ar-condicionado e freezer. Faça já o seu orçamento conosco e resolva seu problema!
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://wa.me/5521990449661" class="bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold py-3 px-8 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg text-lg">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> Chamar no WhatsApp
+                    </a>
+                    <a href="#servicos" class="bg-white border-2 border-slate-200 hover:border-blue-500 text-slate-700 font-bold py-3 px-8 rounded-lg flex items-center justify-center transition-all text-lg">
+                        Ver Serviços
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex-1 relative">
+                <div class="bg-blue-50 rounded-3xl p-4 md:p-8 relative">
+                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
+                        <div class="aspect-[3/4] bg-slate-200 relative overflow-hidden">
+                            <img src="https://i.postimg.cc/bwydN4ZF/1.jpg" alt="Técnico Profissional" class="w-full h-full object-cover">
+                            <div class="absolute top-4 left-4 bg-blue-500 text-white text-[10px] font-bold px-2 py-1 rounded flex items-center gap-1 shadow-lg">
+                                <i data-lucide="shield-check" class="w-3 h-3"></i> Garantia de Até 1 Ano
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6 pt-12">
+                                <div class="text-xl font-black text-white mb-1">Técnico</div>
+                                <p class="text-blue-400 font-bold text-sm mb-3">REFRIGERAÇÃO</p>
+                                <div class="bg-white text-slate-900 py-2 px-4 rounded-lg font-bold text-lg inline-block shadow-lg">
+                                    21 99044-9661
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Nossos Serviços</h2>
+                <p class="text-slate-600 text-xl leading-relaxed">Soluções completas para seus equipamentos de refrigeração e lavanderia.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="services-grid">
+                <!-- Cards serão inseridos via JS para facilitar manutenção -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="vantagens" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1">
+                <div class="rounded-2xl overflow-hidden shadow-xl aspect-video bg-slate-200">
+                    <img src="https://i.postimg.cc/hvRtFYFH/2.jpg" alt="Nossa Equipe" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="flex-1">
+                <h2 class="text-2xl font-bold text-slate-900 mb-12">Por que nos escolher?</h2>
+                <div class="space-y-10">
+                    <div class="flex gap-6">
+                        <div class="mt-1 scale-125"><i data-lucide="clock" class="text-blue-500"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Atendimento Rápido</h3>
+                            <p class="text-slate-600 text-lg leading-relaxed">Atendemos com agilidade no mesmo dia em Niterói, São Gonçalo e Itaboraí.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="mt-1 scale-125"><i data-lucide="shield-check" class="text-blue-500"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Garantia de 1 Ano</h3>
+                            <p class="text-slate-600 text-lg leading-relaxed">Oferecemos garantia de até 1 ano em nossos serviços e peças.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="mt-1 scale-125"><i data-lucide="user-check" class="text-blue-500"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Profissionais Qualificados</h3>
+                            <p class="text-slate-600 text-lg leading-relaxed">Técnicos treinados e experientes para resolver qualquer problema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="py-20 bg-[#0099e6] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center mb-16">Como Funciona?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="flex flex-col items-center text-center relative">
+                    <div class="w-16 h-16 bg-white text-blue-500 rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">1</div>
+                    <h3 class="text-2xl font-bold mb-3">Entre em contato</h3>
+                    <p class="text-white/90 text-lg leading-relaxed">Explique o problema pelo WhatsApp ou telefone.</p>
+                </div>
+                <div class="flex flex-col items-center text-center relative">
+                    <div class="w-16 h-16 bg-white text-blue-500 rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">2</div>
+                    <h3 class="text-2xl font-bold mb-3">Agendamos a visita</h3>
+                    <p class="text-white/90 text-lg leading-relaxed">Escolha o melhor horário para receber nossa equipe.</p>
+                </div>
+                <div class="flex flex-col items-center text-center relative">
+                    <div class="w-16 h-16 bg-white text-blue-500 rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">3</div>
+                    <h3 class="text-2xl font-bold mb-3">Serviço realizado</h3>
+                    <p class="text-white/90 text-lg leading-relaxed">Conserto rápido com peças originais e garantia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1">
+                <h2 class="text-2xl font-bold text-slate-900 mb-8">Expertise em Diversas Marcas</h2>
+                <p class="text-slate-600 text-lg mb-10 leading-relaxed">Nossa equipe está preparada para lidar com as tecnologias mais avançadas do mercado.</p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="flex items-center gap-3 text-slate-700 text-lg font-bold"><i data-lucide="check-circle" class="text-blue-500"></i> Brastemp</div>
+                    <div class="flex items-center gap-3 text-slate-700 text-lg font-bold"><i data-lucide="check-circle" class="text-blue-500"></i> Consul</div>
+                    <div class="flex items-center gap-3 text-slate-700 text-lg font-bold"><i data-lucide="check-circle" class="text-blue-500"></i> Electrolux</div>
+                    <div class="flex items-center gap-3 text-slate-700 text-lg font-bold"><i data-lucide="check-circle" class="text-blue-500"></i> Samsung</div>
+                    <div class="flex items-center gap-3 text-slate-700 text-lg font-bold"><i data-lucide="check-circle" class="text-blue-500"></i> LG</div>
+                    <div class="flex items-center gap-3 text-slate-700 text-lg font-bold"><i data-lucide="check-circle" class="text-blue-500"></i> Panasonic</div>
+                </div>
+            </div>
+            <div class="flex-1 grid grid-cols-2 gap-4">
+                <img src="https://i.postimg.cc/02xych0v/3.jpg" alt="Geladeira" class="aspect-square object-cover rounded-xl shadow-sm">
+                <img src="https://i.postimg.cc/0yX55jR7/4.jpg" alt="Máquina de Lavar" class="aspect-square object-cover rounded-xl shadow-sm">
+                <img src="https://i.postimg.cc/XqW41ydN/5.jpg" alt="Ar Condicionado" class="aspect-square object-cover rounded-xl shadow-sm">
+                <img src="https://i.postimg.cc/HknHNmcs/6.jpg" alt="Reparo" class="aspect-square object-cover rounded-xl shadow-sm">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4">Serviços Realizados</h2>
+                <p class="text-slate-600 text-xl leading-relaxed">Confira alguns de nossos atendimentos recentes em Niterói, São Gonçalo e Itaboraí.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="portfolio-grid">
+                <!-- Imagens do portfólio via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-10">Fale Conosco</h2>
+                    <div class="space-y-8 mb-12">
+                        <div class="flex items-center gap-6">
+                            <div class="p-4 bg-blue-50 rounded-full"><i data-lucide="phone" class="text-blue-500 w-8 h-8"></i></div>
+                            <div>
+                                <p class="text-sm text-slate-400 font-bold uppercase tracking-widest">Telefone</p>
+                                <p class="text-xl font-bold text-slate-800">(21) 99044-9661</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="p-4 bg-green-50 rounded-full"><i data-lucide="message-circle" class="text-green-500 w-8 h-8"></i></div>
+                            <div>
+                                <p class="text-sm text-slate-400 font-bold uppercase tracking-widest">WhatsApp</p>
+                                <p class="text-xl font-bold text-slate-800">(21) 99044-9661</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5521990449661" class="bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold py-3 px-8 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg w-full sm:w-auto text-lg">
+                        Solicitar Orçamento Grátis
+                    </a>
+                </div>
+                <div class="w-full h-[350px] rounded-2xl overflow-hidden shadow-xl border border-slate-100">
+                    <iframe src="https://www.google.com/maps?q=São%20Gonçalo%20RJ&output=embed" class="w-full h-full" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 text-center text-slate-400 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-xl font-bold uppercase tracking-tighter mb-4 text-slate-300">Técnico Refrigeração</p>
+            <p class="text-lg">© 2026 Todos os direitos reservados. Niterói, São Gonçalo e Itaboraí.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Detalhes do Serviço -->
+    <div id="service-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-[2px]" id="modal-overlay"></div>
+        <div class="relative bg-white w-full max-w-[360px] rounded-[20px] shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300" id="modal-content">
+            <div class="bg-[#0099e6] p-4 flex justify-between items-center">
+                <h3 class="text-lg font-bold text-white" id="modal-title">Título do Serviço</h3>
+                <button id="close-modal" class="text-white hover:opacity-80"><i data-lucide="x" class="w-6 h-6"></i></button>
+            </div>
+            <div class="p-6">
+                <p class="text-slate-600 text-sm mb-5" id="modal-description">Descrição...</p>
+                <div class="flex items-center gap-2 text-slate-800 font-bold mb-3">
+                    <i data-lucide="check-circle" class="text-[#0099e6] w-4 h-4"></i>
+                    <span class="text-sm">O que realizamos:</span>
+                </div>
+                <ul class="space-y-2 mb-6" id="modal-tasks">
+                    <!-- Tasks via JS -->
+                </ul>
+                <a href="#" id="modal-whatsapp" target="_blank" class="w-full bg-[#25D366] text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 shadow-md">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> Solicitar agora
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5521990449661" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center hover:scale-110 transition-transform">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <script>
+        // Dados dos Serviços
+        const services = [
+            { 
+                title: "Geladeira", 
+                fullTitle: "Conserto de Geladeira",
+                description: "Reparos em todas as marcas e modelos, nacionais e importados.",
+                icon: 'snowflake',
+                tasks: ["Troca de borracha", "Recarga de gás", "Troca de motor", "Conserto de placa", "Desobstrução de dreno"]
+            },
+            { 
+                title: "Freezer", 
+                fullTitle: "Conserto de Freezer",
+                description: "Manutenção em freezers verticais e horizontais de todas as marcas.",
+                icon: 'wind',
+                tasks: ["Recarga de gás", "Troca de motor/compressor", "Reparo em sistema de degelo", "Troca de termostato", "Conserto de vazamentos"]
+            },
+            { 
+                title: "Ar-Condicionado", 
+                fullTitle: "Manutenção de Ar-Condicionado",
+                description: "Limpeza completa, carga de gás e reparos elétricos em geral.",
+                icon: 'wind',
+                tasks: ["Limpeza e higienização", "Carga de gás refrigerante", "Troca de capacitor", "Reparo de placa eletrônica", "Instalação e desinstalação"]
+            },
+            { 
+                title: "Máquina de Lavar", 
+                fullTitle: "Conserto de Máquina de Lavar",
+                description: "Manutenção completa em lavadoras de todas as marcas e modelos.",
+                icon: 'wrench',
+                tasks: ["Troca de rolamentos e retentor", "Troca de eletrobomba", "Reparo de placa de potência", "Troca de correia", "Higienização interna"]
+            },
+        ];
+
+        const portfolioImages = [
+            "https://i.postimg.cc/1XMhW7y8/7.jpg",
+            "https://i.postimg.cc/1z6xx39m/8.jpg",
+            "https://i.postimg.cc/7hHjT10d/9.jpg",
+            "https://i.postimg.cc/G3KWnN18/10.jpg",
+            "https://i.postimg.cc/yYNw1PV2/11.jpg",
+            "https://i.postimg.cc/CxBXDxnh/12.jpg",
+            "https://i.postimg.cc/t4KfzGFz/13.jpg",
+            "https://i.postimg.cc/bwydN4ZF/1.jpg"
+        ];
+
+        // Renderizar Grid de Serviços
+        const servicesGrid = document.getElementById('services-grid');
+        services.forEach((service, index) => {
+            const card = document.createElement('div');
+            card.className = "bg-white p-10 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center text-center hover:-translate-y-1 transition-transform";
+            card.innerHTML = `
+                <div class="mb-6 p-6 bg-blue-50 rounded-full">
+                    <i data-lucide="${service.icon}" class="w-8 h-8 text-blue-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-slate-800">${service.title}</h3>
+                <p class="text-slate-600 text-xl leading-relaxed mb-8">${service.description}</p>
+                <div class="flex flex-col items-center gap-4">
+                    <button class="text-blue-500 text-xl font-bold flex items-center gap-2 hover:underline cursor-pointer open-modal-btn" data-index="${index}">
+                        Saiba mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                    <a href="https://wa.me/5521990449661?text=Olá, gostaria de um orçamento para ${service.title}" target="_blank" class="bg-green-50 text-green-600 px-6 py-3 rounded-full text-lg font-bold flex items-center gap-2 hover:bg-green-100 transition-colors">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp
+                    </a>
+                </div>
+            `;
+            servicesGrid.appendChild(card);
+        });
+
+        // Renderizar Portfólio
+        const portfolioGrid = document.getElementById('portfolio-grid');
+        portfolioImages.forEach((url, i) => {
+            const item = document.createElement('div');
+            item.className = "aspect-square bg-slate-200 rounded-lg overflow-hidden hover:opacity-80 transition-opacity cursor-pointer shadow-sm";
+            item.innerHTML = `<img src="${url}" alt="Serviço realizado ${i + 1}" class="w-full h-full object-cover">`;
+            portfolioGrid.appendChild(item);
+        });
+
+        // Inicializar ícones
+        lucide.createIcons();
+
+        // Lógica do Menu Mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        let isMenuOpen = false;
+
+        menuToggle.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            mobileMenu.style.display = isMenuOpen ? 'flex' : 'none';
+            menuIcon.setAttribute('data-lucide', isMenuOpen ? 'x' : 'menu');
+            lucide.createIcons();
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                isMenuOpen = false;
+                mobileMenu.style.display = 'none';
+                menuIcon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Lógica do Modal
+        const modal = document.getElementById('service-modal');
+        const modalContent = document.getElementById('modal-content');
+        const closeModal = document.getElementById('close-modal');
+        const modalOverlay = document.getElementById('modal-overlay');
+
+        function openModal(index) {
+            const service = services[index];
+            document.getElementById('modal-title').innerText = service.fullTitle;
+            document.getElementById('modal-description').innerText = service.description;
+            document.getElementById('modal-whatsapp').href = `https://wa.me/5521990449661?text=Olá, gostaria de solicitar o serviço de ${service.fullTitle}`;
+            
+            const tasksList = document.getElementById('modal-tasks');
+            tasksList.innerHTML = '';
+            service.tasks.forEach(task => {
+                const li = document.createElement('li');
+                li.className = "flex items-center gap-3 text-slate-700 text-sm";
+                li.innerHTML = `<div class="w-2 h-2 bg-[#0099e6] rounded-full flex-shrink-0"></div> ${task}`;
+                tasksList.appendChild(li);
+            });
+
+            modal.style.display = 'flex';
+            document.body.classList.add('modal-open');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function hideModal() {
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.classList.remove('modal-open');
+            }, 200);
+        }
+
+        document.querySelectorAll('.open-modal-btn').forEach(btn => {
+            btn.addEventListener('click', () => openModal(btn.getAttribute('data-index')));
+        });
+
+        closeModal.addEventListener('click', hideModal);
+        modalOverlay.addEventListener('click', hideModal);
+    </script>
+</body>
+</html>
